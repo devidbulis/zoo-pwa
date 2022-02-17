@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Wilson Zoo page">
+        <title>Wilson Zoo</title>
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- Image from https://pixabay.com/vectors/squirrel-nager-autumn-cute-nature-1769473/ -->
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+        <link rel="manifest" href="manifest.json">
+        <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-config" content="images/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+    <body>
+        <div id="zooPage">
+            <header id="mainHeader">
+                <!-- Image from https://pixabay.com/photos/squirrel-nature-cute-mammals-wild-4515962/ -->
+                <picture>
+                    <source media="(min-width:601px)" srcset="images/headerImg.webp" type="image/webp">
+                    <source media="(max-width:600px)" srcset="images/headerImg_small.webp 1x, images/headerImg.webp 2x" type="image/webp">
+                    <img id="headerImg" src="images/headerImg.jpg" srcset="images/headerImg_small.jpg 1x, images/headerImg.jpg 2x" alt="Header image">
+                </picture>
+                <!-- Image from https://pixabay.com/vectors/squirrel-nager-autumn-cute-nature-1769473/ -->
+                <a href="index.html">
+                    <img src="images/squirrelLogo.svg" id="logo" alt="Zoo logo">
+                </a>
+                <h1 class="headerText">Prototype</h1>
+            </header>
+            <nav class="mainNav">
+                <ul>
+                    <li><a href="index.html"><span class="navText">Home</span></a></li>
+                    <li><a href="animals.html"><span class="navText">Animals</span></a></li>
+                    <li><a href="kids.html"><span class="navText">Kids Page</span></a></li>
+                    <li><a href="about.html"><span class="navText">About Us</span></a></li>
+                </ul>
+            </nav>
+            <main>
+                <h2>Coming Soon</h2>
+                <hr>
+                <!-- Image from https://pixabay.com/illustrations/under-construction-construction-sign-2408066/ -->
+                <picture>
+                    <source media="(min-width:601px)" srcset="images/underConstruction.webp" type="image/webp">
+                    <source media="(max-width:600px)" srcset="images/underConstruction_small.webp 1x, images/underConstruction.webp 2x" type="image/webp">
+                    <img id="prototypeImg" src="images/underConstruction.jpg" srcset="images/underConstruction_small.jpg 1x, images/underConstruction.jpg 2x" alt="Under construction">
+                </picture>
+            </main>
+            <div id="holdBlank"></div>
+            <footer>
+                <p>
+                    &copy; Wilson Zoo Tel.No. 123-123-123
+                </p>
+                <a href="bookings.html">Book / Donate Page</a>
+                <p>
+                    David Bulis
+                </p>
+            </footer>
+        </div>
+        <script>
+            //check whether browser support service workers
+            if ('serviceWorker' in navigator) {
+                //wait until page loaded to avoid delaying rendering
+                window.addEventListener('load', function() {
+                    //register service worker
+                    navigator.serviceWorker.register('serviceworker.js').then(
+                        function(registration) {
+               console.log('Service worker registration successful',registration);
+                        }, 
+                        function(err) {
+                       console.log('Service worker registration failed', err);
+                    });
+                });
+            }
+        </script>
+    </body>
+</html>

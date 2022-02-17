@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Wilson Zoo page">
+        <title>Wilson Zoo | Kids Page</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="kids.css">
+
+        <!-- Image from https://pixabay.com/vectors/squirrel-nager-autumn-cute-nature-1769473/ -->
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+        <link rel="manifest" href="manifest.json">
+        <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-config" content="images/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+    <body>
+        <div id="zooPage">
+            <header id="mainHeader">
+                <!-- Image from https://pixabay.com/photos/squirrel-nature-cute-mammals-wild-4515962/ -->
+                <picture>
+                    <source media="(min-width:601px)" srcset="images/headerImg.webp" type="image/webp">
+                    <source media="(max-width:600px)" srcset="images/headerImg_small.webp 1x, images/headerImg.webp 2x" type="image/webp">
+                    <img id="headerImg" src="images/headerImg.jpg" srcset="images/headerImg_small.jpg 1x, images/headerImg.jpg 2x" alt="Header image" width="1200" height="300">
+                </picture>
+                <!-- Image from https://pixabay.com/vectors/squirrel-nager-autumn-cute-nature-1769473/ -->
+                <a href="index.html">
+                    <img src="images/squirrelLogo.svg" id="logo" alt="Zoo logo">
+                </a>
+                <h1 class="headerText">Kids</h1>
+            </header>
+            <nav class="mainNav">
+                <ul>
+                    <li><a href="index.html"><span class="navText">Home</span></a></li>
+                    <li><a href="animals.html"><span class="navText">Animals</span></a></li>
+                    <li><a aria-current="page" href="kids.html"><span class="navText">Kids Page</span></a></li>
+                    <li><a href="about.html"><span class="navText">About Us</span></a></li>
+                </ul>
+            </nav>
+            <main>
+                <h1>Want to help animals?</h1>
+                <hr>
+                <!-- Image from https://pixabay.com/vectors/owl-bird-brown-white-cute-baby-42851/ -->
+                <img src="images/kidsOwl.svg" id="kidsOwl" alt="Owl">
+                <hr>
+                <h1>Build a bird feeder!</h1>
+                <h2 id="guideLine">Follow this simple guide</h2>
+                <!-- Images and text from https://www.rspb.org.uk/fun-and-learning/for-kids/games-and-activities/activities/make-a-recycled-bird-feeder/ -->
+                <div class="containerDiv" id="containerSteps">
+                    <article class="container">
+                        <h2>Cut a hole in the side of the bottle</h2>
+                        <picture>
+                            <source media="(min-width:601px)" srcset="images/step1.webp" type="image/webp">
+                            <source media="(max-width:600px)" srcset="images/step1_small.webp 1x, images/step1.webp 2x" type="image/webp">
+                            <img class="steps" id="step1" src="images/step1.jpg" srcset="images/step1_small.jpg 1x, images/step1.jpg 2x" alt="Cut a hole" width="300" height="300">
+                        </picture>
+                    </article>
+                    <article class="container">
+                        <h2>Make a few small holes in the bottom</h2>
+                        <picture>
+                            <source media="(min-width:601px)" srcset="images/step2.webp" type="image/webp">
+                            <source media="(max-width:600px)" srcset="images/step2_small.webp 1x, images/step2.webp 2x" type="image/webp">
+                            <img class="steps" id="step2" src="images/step2.jpg" srcset="images/step2_small.jpg 1x, images/step2.jpg 2x" alt="Small holes in the bottom" width="300" height="300">
+                        </picture>
+                    </article>
+                    <article class="container">
+                        <h2>Hang it on a tree or your washing line</h2>
+                        <picture>
+                            <source media="(min-width:601px)" srcset="images/step3.webp" type="image/webp">
+                            <source media="(max-width:600px)" srcset="images/step3_small.webp 1x, images/step3.webp 2x" type="image/webp">
+                            <img class="steps" id="step3" src="images/step3.jpg" srcset="images/step3_small.jpg 1x, images/step3.jpg 2x" alt="Hang it on a tree" width="300" height="300">
+                        </picture>
+                    </article>
+                    <article class="container">
+                        <h2>Remember to keep your feeders well stocked and clean</h2>
+                        <picture>
+                            <source media="(min-width:601px)" srcset="images/step4.webp" type="image/webp">
+                            <source media="(max-width:600px)" srcset="images/step4_small.webp 1x, images/step4.webp 2x" type="image/webp">
+                            <img class="steps" id="step4" src="images/step4.jpg" srcset="images/step4_small.jpg 1x, images/step4.jpg 2x" alt="Keep feeders well stocked and clean" width="300" height="300">
+                        </picture>
+                    </article>
+                </div>
+            </main>
+            <footer>
+                <p>
+                    &copy; Wilson Zoo Tel.No. 123-123-123
+                </p>
+                <a href="bookings.html">Book / Donate Page</a>
+                <p>
+                    David Bulis
+                </p>
+            </footer>
+        </div>
+        <script>
+            //check whether browser support service workers
+            if ('serviceWorker' in navigator) {
+                //wait until page loaded to avoid delaying rendering
+                window.addEventListener('load', function() {
+                    //register service worker
+                    navigator.serviceWorker.register('serviceworker.js').then(
+                        function(registration) {
+               console.log('Service worker registration successful',registration);
+                        }, 
+                        function(err) {
+                       console.log('Service worker registration failed', err);
+                    });
+                });
+            }
+        </script>
+    </body>
+</html>

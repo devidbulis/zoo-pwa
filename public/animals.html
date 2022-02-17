@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Wilson Zoo page">
+        <title>Wilson Zoo | The Animals</title>
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- Image from https://pixabay.com/vectors/squirrel-nager-autumn-cute-nature-1769473/ -->
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+        <link rel="manifest" href="manifest.json">
+        <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-config" content="images/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+    <body>
+        <div id="zooPage">
+            <header id="mainHeader">
+                <!-- Image from https://pixabay.com/photos/squirrel-nature-cute-mammals-wild-4515962/ -->
+                <picture>
+                    <source media="(min-width:601px)" srcset="images/headerImg.webp" type="image/webp">
+                    <source media="(max-width:600px)" srcset="images/headerImg_small.webp 1x, images/headerImg.webp 2x" type="image/webp">
+                    <img id="headerImg" src="images/headerImg.jpg" srcset="images/headerImg_small.jpg 1x, images/headerImg.jpg 2x" alt="Header image">
+                </picture>
+                <!-- Image from https://pixabay.com/vectors/squirrel-nager-autumn-cute-nature-1769473/ -->
+                <a href="index.html">
+                    <img src="images/squirrelLogo.svg" id="logo" alt="Zoo logo">
+                </a>
+                <h1 class="headerText">The Animals</h1>
+            </header>
+            <nav class="mainNav">
+                <ul>
+                    <li><a href="index.html"><span class="navText">Home</span></a></li>
+                    <li><a aria-current="page" href="animals.html"><span class="navText">Animals</span></a></li>
+                    <li><a href="kids.html"><span class="navText">Kids Page</span></a></li>
+                    <li><a href="about.html"><span class="navText">About Us</span></a></li>
+                </ul>
+            </nav>
+            <main>
+                <h2>Animals</h2>
+                <hr>
+                <div class="containerDiv">
+                    <article class="container">
+                        <!-- Images can be used for educational or other non-commercial purposes and should be attributed to Z70 Photography. -->
+                        <picture>
+                            <source media="(min-width:601px)" srcset="images/pet1.webp" type="image/webp">
+                            <source media="(max-width:600px)" srcset="images/pet1_small.webp 1x, images/pet1.webp 2x" type="image/webp">
+                            <img class="zooImg" src="images/pet1.jpg" srcset="images/pet1_small.jpg 1x, images/pet1.jpg 2x" alt="Red Panda" height="300" width="300">
+                        </picture>
+                        <picture>
+                            <source srcset="images/animalOfTheWeek.webp" type="image/webp">
+                            <img class="ofTheWeek" src="images/animalOfTheWeek.jpg" alt="Animal of the week">
+                        </picture>
+                        <h3>Red Panda</h3>
+                        <!-- Text from https://en.wikipedia.org/wiki/Red_panda -->
+                        <p>The red panda is a carnivoran native to the eastern Himalayas and southwestern China.
+                                It is listed as Endangered on the IUCN Red List because the wild population is estimated at fewer than 10,000 mature individuals.</p>
+                        <a class="button" id="animalOfTheWeek" href="prototype.html">Read more about it</a>
+                    </article>
+                    <article class="container">
+                        <!-- Images can be used for educational or other non-commercial purposes and should be attributed to Z70 Photography. -->
+                        <picture>
+                            <source media="(min-width:601px)" srcset="images/pet2.webp" type="image/webp">
+                            <source media="(max-width:600px)" srcset="images/pet2_small.webp 1x, images/pet2.webp 2x" type="image/webp">
+                            <img class="zooImg" src="images/pet2.jpg" srcset="images/pet2_small.jpg 1x, images/pet2.jpg 2x" alt="Cheetah" height="300" width="300">
+                        </picture>
+                        <h3>Cheetah</h3>
+                        <!-- Text from https://en.wikipedia.org/wiki/Cheetah -->
+                        <p>The cheetah is a large cat native to Africa and central Iran.
+                                It is the fastest land animal, estimated to be capable of running at 80 to 128 km/h (50 to 80 mph).</p>
+                        <a class="button" href="prototype.html">Read more about it</a>
+                    </article>
+                    <article class="container">
+                        <!-- Images can be used for educational or other non-commercial purposes and should be attributed to Z70 Photography. -->
+                        <picture>
+                            <source media="(min-width:601px)" srcset="images/pet3.webp" type="image/webp">
+                            <source media="(max-width:600px)" srcset="images/pet3_small.webp 1x, images/pet3.webp 2x" type="image/webp">
+                            <img class="zooImg" src="images/pet3.jpg" srcset="images/pet3_small.jpg 1x, images/pet3.jpg 2x" alt="Tiger" height="300" width="300">
+                        </picture>
+                        <h3>Tiger</h3>
+                        <!-- Text from https://en.wikipedia.org/wiki/Tiger -->
+                        <p>The tiger is the largest living cat species and a member of the genus Panthera.
+                                It is most recognisable for its dark vertical stripes on orange-brown fur with a lighter underside. </p>
+                        <a class="button" href="prototype.html">Read more about it</a>
+                    </article>
+                    <article class="container">
+                        <!-- Images can be used for educational or other non-commercial purposes and should be attributed to Z70 Photography. -->
+                        <picture>
+                            <source media="(min-width:601px)" srcset="images/pet4.webp" type="image/webp">
+                            <source media="(max-width:600px)" srcset="images/pet4_small.webp 1x, images/pet4.webp 2x" type="image/webp">
+                            <img class="zooImg" src="images/pet4.jpg" srcset="images/pet4_small.jpg 1x, images/pet4.jpg 2x" alt="Lemur" height="300" width="300">
+                        </picture>
+                        <h3>Lemur</h3>
+                        <!-- Text from https://en.wikipedia.org/wiki/Lemur -->
+                        <p>Lemurs are mammals of the order Primates, divided into 8 families and consisting of 15 genera and around 100 existing species.
+                                They are native only to the island of Madagascar. Most existing lemurs are small, have a pointed snout, large eyes, and a long tail.
+                                They chiefly live in trees, and are active at night.</p>
+                        <a class="button" href="prototype.html">Read more about it</a>
+                    </article>
+                    <article class="container">
+                        <!-- Images can be used for educational or other non-commercial purposes and should be attributed to Z70 Photography. -->
+                        <picture>
+                            <source media="(min-width:601px)" srcset="images/pet5.webp" type="image/webp">
+                            <source media="(max-width:600px)" srcset="images/pet5_small.webp 1x, images/pet5.webp 2x" type="image/webp">
+                            <img class="zooImg" src="images/pet5.jpg" srcset="images/pet5_small.jpg 1x, images/pet5.jpg 2x" alt="Bear" height="300" width="300">
+                        </picture>
+                        <h3>Bear</h3>
+                        <!-- Text from https://en.wikipedia.org/wiki/Bear -->
+                        <p>Bears are carnivoran mammals of the family Ursidae. They are classified as caniforms, or doglike carnivorans.
+                            Common characteristics of modern bears include large bodies with stocky legs, long snouts, small rounded ears,
+                                shaggy hair, plantigrade paws with five nonretractile claws, and short tails.
+                        </p>
+                        <a class="button" href="prototype.html">Read more about it</a>
+                    </article>
+                    <article class="container">
+                        <!-- Images can be used for educational or other non-commercial purposes and should be attributed to Z70 Photography. -->
+                        <picture>
+                            <source media="(min-width:601px)" srcset="images/pet6.webp" type="image/webp">
+                            <source media="(max-width:600px)" srcset="images/pet6_small.webp 1x, images/pet6.webp 2x" type="image/webp">
+                            <img class="zooImg" src="images/pet6.jpg" srcset="images/pet6_small.jpg 1x, images/pet6.jpg 2x" alt="Monkey" height="300" width="300">
+                        </picture>
+                        <h3>Monkey</h3>
+                        <!-- Text from https://en.wikipedia.org/wiki/Monkey -->
+                        <p>Monkey is a common name that may refer to certain groups or species of simian mammals of infraorder Simiiformes.
+                                Many monkey species are tree-dwelling, although there are species that live primarily on the ground.
+                                Most species are mainly active during the day.</p>
+                        <a class="button" href="prototype.html">Read more about it</a>
+                    </article>
+                    <article class="container">
+                        <!-- Images can be used for educational or other non-commercial purposes and should be attributed to Z70 Photography. -->
+                        <picture>
+                            <source media="(min-width:601px)" srcset="images/pet7.webp" type="image/webp">
+                            <source media="(max-width:600px)" srcset="images/pet7_small.webp 1x, images/pet7.webp 2x" type="image/webp">
+                            <img class="zooImg" src="images/pet7.jpg" srcset="images/pet7_small.jpg 1x, images/pet7.jpg 2x" alt="Flamingo" height="300" width="300">
+                        </picture>
+                        <h3>Flamingo</h3>
+                        <!-- Text from https://en.wikipedia.org/wiki/Flamingo -->
+                        <p>Flamingos are a type of wading bird in the family Phoenicopteridae, the only bird family in the order Phoenicopteriformes.
+                                Four flamingo species are distributed throughout the Americas, including the Caribbean, and two species are native to Africa, Asia, and Europe.</p>
+                        <a class="button" href="prototype.html">Read more about it</a>
+                    </article>
+                    <article class="container">
+                        <!-- Images can be used for educational or other non-commercial purposes and should be attributed to Z70 Photography. -->
+                        <picture>
+                            <source media="(min-width:601px)" srcset="images/pet8.webp" type="image/webp">
+                            <source media="(max-width:600px)" srcset="images/pet8_small.webp 1x, images/pet8.webp 2x" type="image/webp">
+                            <img class="zooImg" src="images/pet8.jpg" srcset="images/pet8_small.jpg 1x, images/pet8.jpg 2x" alt="Otter" height="300" width="300">
+                        </picture>
+                        <h3>Otter</h3>
+                        <!-- Text from https://en.wikipedia.org/wiki/Otter -->
+                        <p>Otters are carnivorous mammals in the subfamily Lutrinae.
+                                The 13 extant otter species are all semiaquatic, aquatic or marine, with diets based on fish and invertebrates.
+                                Lutrinae is a branch of the Mustelidae family, which also includes weasels, badgers, mink, and wolverines, among other animals.</p>
+                        <a class="button" href="prototype.html">Read more about it</a>
+                    </article>
+                    <article class="container">
+                        <!-- Images can be used for educational or other non-commercial purposes and should be attributed to Z70 Photography. -->
+                        <picture>
+                            <source media="(min-width:601px)" srcset="images/pet9.webp" type="image/webp">
+                            <source media="(max-width:600px)" srcset="images/pet9_small.webp 1x, images/pet9.webp 2x" type="image/webp">
+                            <img class="zooImg" src="images/pet9.jpg" srcset="images/pet9_small.jpg 1x, images/pet9.jpg 2x" alt="Rhino" height="300" width="300">
+                        </picture>
+                        <h3>Rhino</h3>
+                        <!-- Text from https://en.wikipedia.org/wiki/Rhinoceros -->
+                        <p>Rhino is a member of any of the five extant species of odd-toed ungulates in the family Rhinocerotidae,
+                                as well as any of the numerous extinct species therein. Two of the extant species are native to Africa,
+                                and three to Southern Asia.</p>
+                        <a class="button" href="prototype.html">Read more about it</a>
+                    </article>
+                </div>
+            </main>
+            <footer>
+                <p>
+                    &copy; Wilson Zoo Tel.No. 123-123-123
+                </p>
+                <a href="bookings.html">Book / Donate Page</a>
+                <p>
+                    David Bulis
+                </p>
+            </footer>
+        </div>
+        <script>
+            //check whether browser support service workers
+            if ('serviceWorker' in navigator) {
+                //wait until page loaded to avoid delaying rendering
+                window.addEventListener('load', function() {
+                    //register service worker
+                    navigator.serviceWorker.register('serviceworker.js').then(
+                        function(registration) {
+               console.log('Service worker registration successful',registration);
+                        }, 
+                        function(err) {
+                       console.log('Service worker registration failed', err);
+                    });
+                });
+            }
+        </script>
+    </body>
+</html>

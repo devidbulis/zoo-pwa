@@ -1,0 +1,42 @@
+/* New colours */
+#zooPage{
+    background-color: rgb(170, 234, 245);
+}
+footer{
+    background-color: rgb(58, 158, 58);
+}
+.mainNav ul{
+    background-color: rgb(58, 158, 58);
+}
+.mainNav a[aria-current="page"] {
+    background-color: rgb(1, 56, 5);
+}
+.mainNav a:hover {
+    color: rgb(39, 214, 245);
+    background-color: rgb(3, 105, 11);
+}
+article{
+    display: block;
+    background-color: rgb(170, 234, 245);
+    width: 90%;
+}
+/* Headings */
+h1, h2{
+    color: rgb(86, 26, 228);
+    text-align: center;
+    font-size: 2.5em;
+}
+h1{
+    font-size: 3.5em;
+}
+/* Media queries */
+@media only screen and (min-width: 600px) {
+    article {
+    width: calc(45% - 1em);
+    }
+}
+@media only screen and (max-width: 600px) {
+    .steps{
+        max-width: none;
+    }
+}

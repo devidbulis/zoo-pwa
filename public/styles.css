@@ -1,0 +1,438 @@
+/* Fonts */
+@font-face {
+    font-family: 'Bribag Sans';
+    src: url('images/BribagSans-Regular.eot');
+    src: url('images/BribagSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('images/BribagSans-Regular.woff2') format('woff2'),
+        url('images/BribagSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
+@font-face {
+    font-family: 'Gudea';
+    src: url('images/Gudea.eot');
+    src: url('images/Gudea.eot?#iefix') format('embedded-opentype'),
+        url('images/Gudea.woff2') format('woff2'),
+        url('images/Gudea.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
+/* Heading elements */
+h1, h2, h3 {
+    font-family: 'Bribag Sans', Tahoma, Arial, sans-serif;
+    margin-bottom: 0em;
+}
+h2{
+    font-size: 3em;
+    color: rgb(59, 122, 119);
+}
+h3{
+    font-size: 2.2em;
+    color: rgb(59, 59, 59);
+}
+h4{
+    font-size: 1.2em;
+}
+/* Body stuff */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Gudea', Tahoma, Arial, sans-serif;
+}
+p {
+    margin: 0;
+    margin-top: 1em;
+    padding: 0;
+    font-size: 1.2em;
+}
+main {
+    margin: 1em;
+}
+footer{
+    padding: 1em;
+    background-color: rgb(46,92,90);
+}
+footer, footer a{
+    color: white;
+}
+/* Page maximum and minimum width and background colour */
+#zooPage {
+    background-color: rgb(233, 231, 231);
+    min-width: 350px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* Header stuff */
+header {
+    position: relative;
+    width: 100%;
+}
+header h1 {
+    position: absolute;
+    bottom: 4%;
+    left: 2%;
+    font-size: 2.5em;
+    color: rgb(255, 255, 255);
+}
+#headerImg{
+    width: 100%;
+    height: auto;
+    min-width: 350px;
+    max-width: 1200px;
+    max-height: 250px;
+    object-fit: cover;
+}
+#logo {
+    width: 35%;
+    height: auto;
+    min-width: 100px;
+    display: block;
+    position: absolute;
+    top: 1%;
+    left: 5%;
+}
+/* Main navigation */
+.mainNav {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+.mainNav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(46,92,90);
+    display: flex;
+    flex-flow: row wrap;
+}
+.mainNav a {
+    text-decoration: none;
+    color: rgb(246, 238, 248);
+    text-align: center;
+    display: block;
+    min-height: 45px;
+    line-height: 3;
+}
+.mainNav li {
+    border: rgb(255, 255, 255) solid;
+    border-width: 0 .1em;
+    width: calc(25% - .2em);
+}
+.mainNav a[aria-current="page"] {
+    background-color: rgb(28, 56, 55);
+}
+.mainNav a:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(246, 238, 248);
+}
+/* Welcome to the zoo */
+#welcome{
+    text-align: center;
+    font-size: 4.3em;
+    margin-bottom: .5em;
+    margin-top: .5em;
+    color: rgb(170, 165, 95);
+}
+/* Conainer div class */
+.containerDiv {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+.containerDiv p {
+    margin: 0 1em 0.5em 1em;
+    width: 100%;
+}
+.containerDiv h3, h4 {
+    padding: 0;
+    margin: .5em 1em;
+    width: 100%;
+}
+/* Button */
+.button {
+    width: 100%;
+    text-decoration: none;
+    background-color: rgb(46,92,90);
+    color: rgb(252, 241, 241);
+    text-align: center;
+    display:block;
+    line-height: 3;
+    align-self: flex-end;
+}
+.button:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(252, 241, 241);
+}
+/* Article design */
+article {
+    margin: .8em .0em;
+    box-sizing: border-box;
+    background-color: rgb(219, 217, 217);
+    display: flex;
+    flex-flow: row wrap;
+}
+/* Images */
+.zooImg{
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+article picture{
+    width: 100%;
+}
+#conservationImg{
+    width: 30%;
+    min-width: 300px;
+}
+.container img {
+    width: 100%;
+}
+/* Home Page info about the zoo */
+#zooInfo picture {
+    margin: .8em .0em;
+}
+#zooInfo h3{
+    font-size: 3em;
+}
+#zooInfo p{
+    font-size: 1.5em;
+}
+#zooInfo :nth-child(1),#zooInfo :nth-child(3),#zooInfo :nth-child(5) {flex-direction: row-reverse;}
+/* Donate/Book call to action buttons */
+.containerButtons{
+    background-color: rgb(233, 231, 231);
+}
+.containerButtons img{
+    width: 100%;
+}
+/* Price table */
+td{
+    text-align: center;
+}
+#priceTable{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    width: 90%;
+    height: 250px;
+    font-size: 1.2em;
+}
+#bookPage{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.priceTableRow{
+    background-color: rgb(59, 122, 119);
+    color: white;
+}
+.priceTableRow2{
+    background-color: rgb(219, 217, 217);
+}
+/* Animal/Event of the week */
+.ofTheWeek{
+    position: absolute;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+}
+#animalOfTheWeek, #eventOfTheWeek{
+    background-color: rgb(208, 205, 47);
+    color: black;
+}
+.container{
+    position: relative;
+}
+/* Events */
+#containerEvents article{
+    width: 100%;
+}
+#containerEvents .button{
+    width: 30%;
+    margin-left: auto;
+}
+/* Kids Page animation */
+#kidsOwl{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    min-width: 200px;
+    position: relative;
+    z-index: 1;
+    animation-name: animationOwl;
+    animation-duration: 5s;
+}
+@keyframes animationOwl {
+    0%, 100% {
+    }
+    25% {
+        transform: scale(0.5) translate(25em, 0) rotate(0.25turn);
+    }
+    50% {
+        transform: scale(0.5) translate(-30em, 0) rotate(0.5turn);
+    }
+    75% {
+        transform: scale(0.5) translate(0, 0) rotate(0.75turn);
+    }
+    100% {
+        transform: rotate(1turn);
+    }
+}
+/* Kids page steps */
+.steps{
+    display: block;
+    position: relative;
+    margin-top: 2em;
+    min-width: 200px;
+    max-width: 400px;
+}
+#guideLine{
+    background-color: rgb(58, 158, 58);
+    color: white;
+}
+#step1, #step4{
+    transform: rotate(0.03turn);
+}
+#step2, #step3{
+    transform: rotate(-0.03turn);
+}
+/* Donate section */
+#comment{
+    width: 250px;
+    height: 50px;
+    max-width: 300px;
+    max-height: 50px;
+}
+#donateForm p{
+    margin-top: .3em;
+}
+#donateText{
+    font-size: 1.2em;
+}
+/* Prototype Page */
+#prototypeImg{
+    width: 45%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+#holdBlank{
+    margin-bottom: 90%;
+}
+/* Grid */
+.gridContainer {
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-column-gap: .4em; 
+    grid-row-gap: .4em; 
+  }
+.gridItem {
+    background: rgb(219, 217, 217);
+}
+.gridItem:nth-of-type(1){
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+.gridItem:nth-of-type(2){
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+.gridItem:nth-of-type(3){
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+}
+.gridItem:nth-of-type(4){
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+}
+.gridItem h3{
+    margin-top: .6em;
+    text-align: center;
+}
+#openTimes article {
+    justify-content: center;
+    font-size: 1em;
+    width: 100%;
+    min-width: 200px;
+    margin: 0;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    padding: 0;
+}
+#openTimes ol{
+    width: 37%;
+    margin: 0;
+    margin-left: 1.2em;
+    padding: 0;
+}
+#openTimes ul{
+    width: 50%;
+    list-style-type: none;
+    margin: 0;
+    margin-left: .4em;
+    padding: 0;
+}
+#address{
+    width: 100%;
+}
+#address ul{
+    list-style-type: none;
+}
+/* Media queries */
+@media only screen and (max-width: 599px) {
+    #zooInfo picture{
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 600px) {
+    header h1 {
+        font-size: 3.4em;
+    }
+    .containerDiv {
+        flex-direction: row;
+        align-items: normal;
+    }
+    article {
+        width: calc(50% - 1em);
+    }
+    #zooInfo article {
+          width: calc(100% - 1em);
+    }
+    .zooImg{
+          max-width: 450px;
+    }
+}
+@media only screen and (min-width: 800px) {
+    header h1 {
+        font-size: 3.8em;
+    }
+    article {
+        width: calc(33.3% - 1em);
+      }
+    #zooInfo article {
+          width: calc(50% - 1em);
+    }
+    .zooImg{
+          max-width: 300px;
+    }
+    
+}
+@media only screen and (min-width: 900px) {
+    .mainNav li {
+    width:150px;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    header h1 {
+        font-size: 4em;
+    }
+    .zooImg{
+        max-width: 450px;
+    }
+}

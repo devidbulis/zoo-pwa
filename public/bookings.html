@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Wilson Zoo page">
+        <title>Wilson Zoo</title>
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- Image from https://pixabay.com/vectors/squirrel-nager-autumn-cute-nature-1769473/ -->
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+        <link rel="manifest" href="manifest.json">
+        <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-config" content="images/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+    <body>
+        <div id="zooPage">
+            <header id="mainHeader">
+                <!-- Image from https://pixabay.com/photos/squirrel-nature-cute-mammals-wild-4515962/ -->
+                <picture>
+                    <source media="(min-width:601px)" srcset="images/headerImg.webp" type="image/webp">
+                    <source media="(max-width:600px)" srcset="images/headerImg_small.webp 1x, images/headerImg.webp 2x" type="image/webp">
+                    <img id="headerImg" src="images/headerImg.jpg" srcset="images/headerImg_small.jpg 1x, images/headerImg.jpg 2x" alt="Header image">
+                </picture>
+                <!-- Image from https://pixabay.com/vectors/squirrel-nager-autumn-cute-nature-1769473/ -->
+                <a href="index.html">
+                    <img src="images/squirrelLogo.svg" id="logo" alt="Zoo logo">
+                </a>
+                <h1 class="headerText">Bookings and Donations</h1>
+            </header>
+            <nav class="mainNav">
+                <ul>
+                    <li><a href="index.html"><span class="navText">Home</span></a></li>
+                    <li><a href="animals.html"><span class="navText">Animals</span></a></li>
+                    <li><a href="kids.html"><span class="navText">Kids Page</span></a></li>
+                    <li><a href="about.html"><span class="navText">About Us</span></a></li>
+                </ul>
+            </nav>
+            <main>
+                        <h2 id="events">Events</h2>
+                        <hr>
+                <div class="containerDiv" id="containerEvents">
+                    <article class="container">
+                        <h3>Learn about Birds</h3>
+                        <h4>May 16th 16:00</h4>
+                        <!-- Text from https://www.bto.org/develop-your-skills/training-courses/about-our-courses -->
+                        <p class="para">Birdwatching is a hugely rewarding and enjoyable pastime; from bringing further enjoyment to a walk in the countryside,
+                             through to a life-long career. Being able to identify the birds that you see and hear about you greatly increases your connection 
+                             with nature and enables you to give something back and make a real, direct difference for conservation.
+                        </p>
+                        <a class="button" href="prototype.html">Book a ticket to the event</a>
+                    </article>
+                    <article class="container">
+                        <h3>Conservation Talk</h3>
+                        <h4>May 19th 14:00</h4>
+                        <!-- Text from https://ww2.rspb.org.uk/reserves-and-events/events-dates-and-inspiration/events/talks.aspx -->
+                        <p class="para">Always entertaining, interesting and informative – talks are organised to be anything but dull.
+                             Enthusiastic speakers cover a wide range of topics - from wildlife in Kent to birds of Kenya, and from bats to bees.
+                              Every speaker has a story to tell, so come and be inspired.
+                        </p>
+                        <a class="button" href="prototype.html">Book a ticket to the event</a>
+                    </article>
+                    <article class="container">
+                        <h3>Our animal's stories</h3>
+                        <h4>May 24th 15:00</h4>
+                        <p class="para">Learn more about our animals - where are they from, interesting facts about their breed 
+                            and interesting stories about certain individuals.
+                        </p>
+                        <a class="button" href="prototype.html">Book a ticket to the event</a>
+                    </article>
+                    <article class="container">
+                        <h3>Animal Photography</h3>
+                        <h4>May 25th 12:00</h4>
+                        <p class="para">Practise your wildlife composition with various animals. Learn more about phorography from our specialists 
+                            and get unforgetable experience. We will give you access to place, where you will be able to get your perfect shot.
+                        </p>
+                        <a class="button" href="prototype.html">Book a ticket to the event</a>
+                    </article>
+                </div>
+                <h2 id="bookVisit">Book a visit</h2>
+                <hr>
+                <table id="priceTable">
+                    <tr class="priceTableRow">
+                      <th>Person</th>
+                      <th>Price</th>
+                      <th>Group Discounts</th>
+                      <th>Discount</th>
+                    </tr>
+                    <tr class="priceTableRow2">
+                        <td>Adult (16+)</td>
+                        <td class="price">£15.00</td>
+                        <td class="price">Group(4+)</td>
+                        <td class="price">10%</td>
+                    </tr>
+                    <tr class="priceTableRow">
+                        <td>Child (3-15)</td>
+                        <td class="price">£12.00</td>
+                        <td>Group(8+)</td>
+                        <td class="price">15%</td>
+                    </tr>
+                    <tr class="priceTableRow2">
+                        <td>Child under 3</td>
+                        <td class="price">FREE</td>
+                        <td>Group(12+)</td>
+                        <td class="price">20%</td>
+                    </tr>
+                  </table>
+                <div class="containerDiv"  id="bookPage" >
+                    <article class="containerButtons">
+                        <a class="donateButton" href="prototype.html">
+                            <img src="images/book.svg" alt="Book now"></a>
+                    </article>
+                </div>
+                <h2 id="donate">Donate</h2>
+                <hr>
+                <h3>Help us</h3>
+                <p class="para">By donating you help us continue our work. Without your donations we would not be able to help so many animals in the wild.
+                    Your support is very important to us. If you want to support certain part of our work or certain animal, you can do so using a comment section.
+                    You can choose to sponsor an animal of your choice if you want to help make their live happier.
+                </p>
+                <p>By donating you help us in several areas:</p>
+                <ul id="donateText">
+                    <li>The running of the zoo</li>
+                    <li>Conservation</li>
+                    <li>Sponsoring an animal</li>
+                </ul>
+                <form method="get" id="donateForm">
+                    <fieldset>
+                        <legend>Donate</legend>            
+                        <p>
+                            <label for="name">Name:
+                                <input type="text" id="name" name="name" required>
+                            </label>
+                        </p>                               
+                        <p>
+                            <label for="email">Email:
+                                <input type="email" id="email" name="email" required>
+                            </label>
+                        </p>                
+                        <p>
+                            <label for="telephone" >Telephone:
+                                <input type="tel" id="telephone" maxlength="12" name="telephone">
+                            </label>
+                        </p>                
+                        <p>
+                            <label for="amount">Amount: £
+                                <input type="number" id="amount" min="1" step="0.01" name="amount" value="1.00" required>
+                            </label>
+                        </p>
+                        <p>
+                            <label for="comment">Comment:
+                                <textarea id="comment" name="comment"></textarea>
+                            </label>
+                        </p>  
+                    </fieldset>
+                    <p>
+                        <button type="submit" name="submit" id="submit">Continue</button>
+                    </p>
+                    <p>
+                        <button type="reset" name="reset" id="reset">Reset</button>
+                    </p>
+                    </form>
+            </main>
+            <footer>
+                <p>
+                    &copy; Wilson Zoo Tel.No. 123-123-123
+                </p>
+                <a href="bookings.html">Book / Donate Page</a>
+                <p>
+                    David Bulis
+                </p>
+            </footer>
+        </div>
+        <script>
+            //check whether browser support service workers
+            if ('serviceWorker' in navigator) {
+                //wait until page loaded to avoid delaying rendering
+                window.addEventListener('load', function() {
+                    //register service worker
+                    navigator.serviceWorker.register('serviceworker.js').then(
+                        function(registration) {
+               console.log('Service worker registration successful',registration);
+                        }, 
+                        function(err) {
+                       console.log('Service worker registration failed', err);
+                    });
+                });
+            }
+        </script>
+    </body>
+</html>

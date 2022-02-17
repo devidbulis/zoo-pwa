@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Wilson Zoo page">
+        <title>Wilson Zoo | Home</title>
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- Image from https://pixabay.com/vectors/squirrel-nager-autumn-cute-nature-1769473/ -->
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+        <link rel="manifest" href="manifest.json">
+        <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-config" content="images/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+    <body>
+        <div id="zooPage">
+            <header>
+                <!-- Image from https://pixabay.com/photos/squirrel-nature-cute-mammals-wild-4515962/ -->
+                <picture>
+                    <source media="(min-width:601px)" srcset="images/headerImg.webp" type="image/webp">
+                    <source media="(max-width:600px)" srcset="images/headerImg_small.webp 1x, images/headerImg.webp 2x" type="image/webp">
+                    <img id="headerImg" src="images/headerImg.jpg" srcset="images/headerImg_small.jpg 1x, images/headerImg.jpg 2x" alt="Header image">
+                </picture>
+                <!-- Image from https://pixabay.com/vectors/squirrel-nager-autumn-cute-nature-1769473/ -->
+                <a href="index.html">
+                    <img src="images/squirrelLogo.svg" id="logo" alt="Zoo logo">
+                </a>
+                <h1 class="headerText">Home</h1>
+            </header>
+            <nav class="mainNav">
+                <ul>
+                    <li><a aria-current="page" href="index.html"><span class="navText">Home</span></a></li>
+                    <li><a href="animals.html"><span class="navText">Animals</span></a></li>
+                    <li><a href="kids.html"><span class="navText">Kids Page</span></a></li>
+                    <li><a href="about.html"><span class="navText">About Us</span></a></li>
+                </ul>
+            </nav>
+            <main>
+                <h2 id="welcome"><i>Welcome to Wilson Zoo</i></h2>
+                <h2>We care about animals</h2>
+                <hr>
+                <!-- Text from https://www.english-online.at/biology/zoos/at-the-zoo.htm#:~:text=Zoos%20also%20help%20to%20save%20wildlife.&text=Zoos%20give%20children%20tours%20and,about%20them%20and%20their%20bodies. -->
+                <p class="para">You might think that we are just trying to make money but in reality we value animal rights and we are trying to do everything we can to help animals.
+                    Zoos have many functions. Visitors can have fun and get information. Zoos also help to save wildlife.
+                     Some of the world’s animals are in danger of becoming extinct and zoos give them a place to survive.
+                      You can see animals that you may never see in your life any more.
+                       Zoos give children tours and teach classes to understand the lives of animals in a better way.
+                        Studying animals is called zoology and people who do research on animals are called zoologists.
+                         They take care of sick animals and try to learn more about them and their bodies.
+                </p>
+                <h2>What can you do at the zoo?</h2>
+                <hr>
+                <div id="zooInfo">
+                    <div class="containerDiv" >
+                        <!-- Image from https://pixabay.com/photos/lemurs-animals-zoo-1010643/ -->
+                        <picture>
+                            <source media="(min-width:601px)" srcset="images/lemurs.webp" type="image/webp">
+                            <source media="(max-width:600px)" srcset="images/lemurs_small.webp 1x, images/lemurs.webp 2x" type="image/webp">
+                            <img class="zooImg" src="images/lemurs.jpg" srcset="images/lemurs_small.jpg 1x, images/lemurs.jpg 2x" alt="Lemurs">
+                        </picture>
+                    <article class="container">
+                        <h3>See different animals</h3>
+                        <p>Wilson Zoo have hundreds of species and thousands of individual animals. There are so many animals that you cannot see them all in one visit.</p>
+                        <a class="button" href="animals.html">More animals</a>
+                    </article>
+                    </div>
+                    <div class="containerDiv" >
+                        <!-- Image from https://pixabay.com/photos/giraffe-eating-feeding-zoo-2611581/ -->
+                        <picture>
+                            <source media="(min-width:601px)" srcset="images/feed.webp" type="image/webp">
+                            <source media="(max-width:600px)" srcset="images/feed_small.webp 1x, images/feed.webp 2x" type="image/webp">
+                            <img class="zooImg" src="images/feed.jpg" srcset="images/feed_small.jpg 1x, images/feed.jpg 2x" alt="Feeding a giraffe">
+                        </picture>
+                    <article class="container">
+                        <h3>Feed some animals</h3>
+                        <p>In our zoo we help a system with labled signs in front of each animal where you can find out if you can feed them and what do they eat. 
+                            Do not feed animals before asking for permision!</p>
+                        <a class="button" href="prototype.html">Read more about it</a>
+                    </article>
+                    </div>
+                    <div class="containerDiv" >
+                        <!-- Image from https://pixabay.com/photos/zoo-animal-deer-ruminant-mammal-5643755/ -->
+                        <picture>
+                            <source media="(min-width:601px)" srcset="images/deer.webp" type="image/webp">
+                            <source media="(max-width:600px)" srcset="images/deer_small.webp 1x, images/deer.webp 2x" type="image/webp">
+                            <img class="zooImg" src="images/deer.jpg" srcset="images/deer_small.jpg 1x, images/deer.jpg 2x" alt="Petting a deer">
+                        </picture>
+                    <article class="container">
+                        <h3>You can pet some animals</h3>
+                        <p>In our zoo we help a system with labled signs in front of each animal where you can find out if you can pet some of them. 
+                            Do not go near animals before asking for permision!</p>
+                        <a class="button" href="prototype.html">Read more about it</a>
+                    </article>
+                    </div>
+                    <div class="containerDiv" >
+                        <!-- Image from https://pixabay.com/illustrations/question-mark-pile-questions-symbol-2492009/ -->
+                        <picture>
+                            <source media="(min-width:601px)" srcset="images/learn.webp" type="image/webp">
+                            <source media="(max-width:600px)" srcset="images/learn_small.webp 1x, images/learn.webp 2x" type="image/webp">
+                            <img class="zooImg" src="images/learn.jpg" srcset="images/learn_small.jpg 1x, images/learn.jpg 2x" alt="Learning">
+                        </picture>
+                    <article class="container">
+                        <h3>Learn</h3>
+                        <p>If you want to learn about animals and importance of conservation, it's a great place to start. 
+                            Always entertaining, interesting and informative – talks are organised for you to learn.</p>
+                        <a class="button" href="prototype.html">Read more about it</a>
+                    </article>
+                    </div>
+                    <div class="containerDiv" >
+                        <!-- Image from https://pixabay.com/photos/shark-tunnel-aquarium-loropark-473012/ -->
+                        <picture>
+                            <source media="(min-width:601px)" srcset="images/aquarium.webp" type="image/webp">
+                            <source media="(max-width:600px)" srcset="images/aquarium_small.webp 1x, images/aquarium.webp 2x" type="image/webp">
+                            <img class="zooImg" src="images/aquarium.jpg" srcset="images/aquarium_small.jpg 1x, images/aquarium.jpg 2x" alt="Aquarium">
+                        </picture>
+                    <article class="container">
+                        <h3>Visit the Aquarium</h3>
+                        <!-- Text from https://www.blueplanetaquarium.com/attractions/underwater-aquatunnel/ -->
+                        <p>At the heart of Wilson Zoo's aquarium is the ‘Aqua-tunnel’.
+                             You’ll be taken on a spectacular underwater safari on our moving walkway and everywhere 
+                             you look you’ll find amazing tropical fish and awesome sharks staring back at you!
+                        </p>
+                        <a class="button" href="prototype.html">Read more about it</a>
+                    </article>
+                    </div>
+                    <div class="containerDiv" >
+                        <!-- Image from https://pixabay.com/photos/illustration-red-panda-the-zoo-2246804/ -->
+                        <picture>
+                            <source media="(min-width:601px)" srcset="images/drawing.webp" type="image/webp">
+                            <source media="(max-width:600px)" srcset="images/drawing_small.webp 1x, images/drawing.webp 2x" type="image/webp">
+                            <img class="zooImg" src="images/drawing.jpg" srcset="images/drawing_small.jpg 1x, images/drawing.jpg 2x" alt="Drawing">
+                        </picture>
+                    <article class="container">
+                        <h3>Participate in drawing contest</h3>
+                        <!-- Text from https://www.format.com/magazine/resources/art/art-contests-for-kids -->
+                        <p>Do you have a talented young artist, photographer, designer, or illustrator in your life?
+                             It’s never too early to start helping them get their work out there!
+                              We’ve rounded up the top art contests for kids and teens that can help these budding creators share their first masterpieces with the world.
+                        </p>
+                        <a class="button" href="prototype.html">Read more about it</a>
+                    </article>
+                    </div>
+                </div>
+                <h2>News</h2>
+                <hr>
+                <div class="containerDiv">
+                    <article class="container">
+                        <!-- Images can be used for educational or other non-commercial purposes and should be attributed to Z70 Photography. -->
+                        <picture>
+                            <source media="(min-width:601px)" srcset="images/pet1.webp" type="image/webp">
+                            <source media="(max-width:600px)" srcset="images/pet1_small.webp 1x, images/pet1.webp 2x" type="image/webp">
+                            <img class="zooImg" src="images/pet1.jpg" srcset="images/pet1_small.jpg 1x, images/pet1.jpg 2x" alt="Red Panda">
+                        </picture>
+                        <picture>
+                            <source srcset="images/animalOfTheWeek.webp" type="image/webp">
+                            <img class="ofTheWeek" src="images/animalOfTheWeek.jpg" alt="Animal of the week">
+                        </picture>
+                        <h3>Red Panda</h3>
+                        <!-- Text from https://en.wikipedia.org/wiki/Red_panda -->
+                        <p>The red panda is a carnivoran native to the eastern Himalayas and southwestern China.
+                            It is listed as Endangered on the IUCN Red List because the wild population is estimated at fewer than 10,000 mature individuals.</p>
+                        <p>
+                            Come back next week to see new animal of the week.
+                        </p>
+                        <a class="button" id="animalOfTheWeek" href="animals.html">More Animals</a>
+                    </article>
+                    <article class="container">
+                        <!-- Image from https://pixabay.com/photos/owl-bird-animal-little-owl-275940/ -->
+                        <picture>
+                            <source media="(min-width:601px)" srcset="images/owl.webp" type="image/webp">
+                            <source media="(max-width:600px)" srcset="images/owl_small.webp 1x, images/owl.webp 2x" type="image/webp">
+                            <img class="zooImg" src="images/owl.jpg" srcset="images/owl_small.jpg 1x, images/owl.jpg 2x" alt="Owl">
+                        </picture>
+                        <picture>
+                            <source srcset="images/eventOfTheWeek.webp" type="image/webp">
+                            <img class="ofTheWeek" src="images/eventOfTheWeek.png" alt="Event of the week">
+                        </picture>
+                        <h3>Learn about Birds</h3>
+                        <!-- Text from https://www.bto.org/develop-your-skills/training-courses/about-our-courses -->
+                        <p class="para">Birdwatching is a hugely rewarding and enjoyable pastime; from bringing further enjoyment to a walk in the countryside,
+                            through to a life-long career. Being able to identify the birds that you see and hear about you greatly increases your connection 
+                            with nature.
+                       </p>
+                       <p>
+                        Come back next week to see new event of the week.
+                        </p>
+                        <a class="button" id="eventOfTheWeek" href="bookings.html#events">More Events</a>
+                    </article>
+                    <article class="container">
+                        <!-- Image from https://pixabay.com/photos/environmental-protection-326923/ -->
+                        <picture>
+                            <source media="(min-width:601px)" srcset="images/tree.webp" type="image/webp">
+                            <source media="(max-width:600px)" srcset="images/tree_small.webp 1x, images/tree.webp 2x" type="image/webp">
+                            <img class="zooImg" src="images/tree.jpg" srcset="images/tree_small.jpg 1x, images/tree.jpg 2x" alt="Conservation">
+                        </picture>
+                        <h3>Conservation talk</h3>
+                        <!-- Text from https://ww2.rspb.org.uk/reserves-and-events/events-dates-and-inspiration/events/talks.aspx -->
+                        <p class="para">Always entertaining, interesting and informative – talks are organised to be anything but dull.
+                            Enthusiastic speakers cover a wide range of topics - from wildlife in Kent to birds of Kenya, and from bats to bees.
+                             Every speaker has a story to tell, so come and be inspired.
+                       </p>
+                        <a class="button" href="bookings.html#events">More Events</a>
+                    </article>
+                    <article class="container">
+                        <!-- Image from https://pixabay.com/photos/zoo-animal-zebra-contact-friend-4680796/ -->
+                        <picture>
+                            <source media="(min-width:601px)" srcset="images/zebra.webp" type="image/webp">
+                            <source media="(max-width:600px)" srcset="images/zebra_small.webp 1x, images/zebra.webp 2x" type="image/webp">
+                            <img class="zooImg" src="images/zebra.jpg" srcset="images/zebra_small.jpg 1x, images/zebra.jpg 2x" alt="Zebras">
+                        </picture>
+                        <h3>Cutest couple of our zoo</h3>
+                        <p>Come to our zoo to see the cutest couple of zebras. They are always together and our workers
+                             have though time trying to separate them for medicinical procedures.
+                        </p>
+                        <a class="button" href="prototype.html">Read more about it</a>
+                    </article>
+                    <article class="container">
+                        <!-- Image from https://pixabay.com/photos/tiger-tiger-cub-cute-nuremberg-zoo-987684/ -->
+                        <picture>
+                            <source media="(min-width:601px)" srcset="images/tigers.webp" type="image/webp">
+                            <source media="(max-width:600px)" srcset="images/tigers_small.webp 1x, images/tigers.webp 2x" type="image/webp">
+                            <img class="zooImg" src="images/tigers.jpg" srcset="images/tigers_small.jpg 1x, images/tigers.jpg 2x" alt="Tigers">
+                        </picture>
+                        <h3>Tiger babies</h3>
+                        <p>We are celebrating the birth of cute baby tigers. Newborns are healthy and you already have a chance to see them outside playing with their mother.
+                        </p>
+                        <a class="button" href="prototype.html">Read more about it</a>
+                    </article>
+                    <article class="container">
+                        <!-- Image from https://pixabay.com/photos/squirrel-young-animal-feeding-6090574/ -->
+                        <picture>
+                            <source media="(min-width:601px)" srcset="images/volunteers.webp" type="image/webp">
+                            <source media="(max-width:600px)" srcset="images/volunteers_small.webp 1x, images/volunteers.webp 2x" type="image/webp">
+                            <img class="zooImg" src="images/volunteers.jpg" srcset="images/volunteers_small.jpg 1x, images/volunteers.jpg 2x" alt="Feeding a squirrel">
+                        </picture>
+                        <h3>Looking for volunteers</h3>
+                        <!-- Text from https://www.chesterzoo.org/work-with-us/volunteer/ -->
+                        <p>As a charity, volunteers provide vital support to the life of the zoo.
+                             Wilson Zoo’s award-winning volunteers complement paid staff’s work and contribute to our success by supporting the zoo’s education,
+                              scientific and conservation mission.
+                        </p>
+                        <a class="button" href="prototype.html">Read more about it</a>
+                    </article>
+                </div>
+                <h2>Want to book a visit or donate?</h2>
+                <hr>
+                <div class="containerDiv">
+                    <article class="containerButtons">
+                        <a class="donateButton" href="bookings.html#bookVisit">
+                            <img src="images/book.svg" alt="Book now"></a>
+                        <h3>Book a visit</h3>
+                        <p>Book a visit for an event or standard visit to see various animals, learn about them and find out more about importance of conservation work. 
+                        </p>
+                    </article>
+                    <article class="containerButtons">
+                        <a class="donateButton" href="bookings.html#donate">
+                        <img src="images/donate.svg" alt="Donate"></a>
+                        <h3>Donate</h3>
+                        <p>By donating you help us continue our work. Without your donations we would not be able to help so many animals in the wild.
+                            Your support is very important to us.
+                        </p>
+                    </article>
+                </div>
+            </main>
+            <footer>
+                <p>
+                    &copy; Wilson Zoo Tel.No. 123-123-123
+                </p>
+                <a href="bookings.html">Book / Donate Page</a>
+                <p>
+                    David Bulis
+                </p>
+            </footer>
+        </div>
+        <script>
+            //check whether browser support service workers
+            if ('serviceWorker' in navigator) {
+                //wait until page loaded to avoid delaying rendering
+                window.addEventListener('load', function() {
+                    //register service worker
+                    navigator.serviceWorker.register('serviceworker.js').then(
+                        function(registration) {
+               console.log('Service worker registration successful',registration);
+                        }, 
+                        function(err) {
+                       console.log('Service worker registration failed', err);
+                    });
+                });
+            }
+        </script>
+    </body>
+</html>

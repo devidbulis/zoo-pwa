@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Wilson Zoo page">
+        <title>Wilson Zoo | About the Zoo</title>
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- Image from https://pixabay.com/vectors/squirrel-nager-autumn-cute-nature-1769473/ -->
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+        <link rel="manifest" href="manifest.json">
+        <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-config" content="images/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+    <body>
+        <div id="zooPage">
+            <header id="mainHeader">
+                <!-- Image from https://pixabay.com/photos/squirrel-nature-cute-mammals-wild-4515962/ -->
+                <picture>
+                    <source media="(min-width:601px)" srcset="images/headerImg.webp" type="image/webp">
+                    <source media="(max-width:600px)" srcset="images/headerImg_small.webp 1x, images/headerImg.webp 2x" type="image/webp">
+                    <img id="headerImg" src="images/headerImg.jpg" srcset="images/headerImg_small.jpg 1x, images/headerImg.jpg 2x" alt="Header image">
+                </picture>
+                <!-- Image from https://pixabay.com/vectors/squirrel-nager-autumn-cute-nature-1769473/ -->
+                <a href="index.html">
+                    <img src="images/squirrelLogo.svg" id="logo" alt="Zoo logo">
+                </a>
+                <h1 class="headerText">About us</h1>
+            </header>
+            <nav class="mainNav">
+                <ul>
+                    <li><a href="index.html"><span class="navText">Home</span></a></li>
+                    <li><a href="animals.html"><span class="navText">Animals</span></a></li>
+                    <li><a href="kids.html"><span class="navText">Kids Page</span></a></li>
+                    <li><a aria-current="page" href="about.html"><span class="navText">About Us</span></a></li>
+                </ul>
+            </nav>
+            <main>
+                <h2>Address and Opening times</h2>
+                <hr>
+                <div class="gridContainer">
+                    <div class="gridItem">
+                        <h3>Opening times</h3>
+                    </div>
+                    <div class="gridItem">
+                        <h3>Address</h3>
+                    </div>
+                    <div class="gridItem">
+                        <div class="containerDiv" id="openTimes">
+                            <article class="container">
+                                    <ol>
+                                        <li>Monday</li>
+                                        <li>Tuesday</li>
+                                        <li>Wednesday</li>
+                                        <li>Thursday</li>
+                                        <li>Friday</li>
+                                        <li>Saturday</li>
+                                        <li>Sunday</li>
+                                    </ol>
+                                    <ul>
+                                        <li>10:00 - 18:00</li>
+                                        <li>10:00 - 18:00</li>
+                                        <li>10:00 - 18:00</li>
+                                        <li>10:00 - 18:00</li>
+                                        <li>10:00 - 18:00</li>
+                                        <li>10:00 - 17:00</li>
+                                        <li>10:00 - 17:00</li>
+                                    </ul>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="gridItem">
+                        <div class="containerDiv" id="address">
+                            <article class="container">
+                                <ul>
+                                    <li>14 King Street</li>
+                                    <li>Leeds</li>
+                                    <li>England</li>
+                                    <li>LS1 2HL</li>
+                                </ul>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <h2>History of the Zoo</h2>
+                <hr>
+                <!-- Text from https://www.noahsarkzoofarm.co.uk/blog/a-history-of-the-zoo -->
+                <p class="para">While modern zoos are almost unrecognisable compared to zoos of the past,
+                    the history of the zoo can actually be dated back to Ancient Egypt – around 3,000 years ago. Back then,
+                    animals were used to show the wealth and power of a ruler, with pharaohs demanding wild animals be captured on their behalf.
+                    It wasn’t until the age of exploration in the 15th century that exotic specimens, particularly from tropical regions,
+                        were collected by explorers when travelling around the world. This resulted in zoos being set up in capital cities in the west in order to,
+                        once again, competitively demonstrate their status and power by the size and grandeur of their zoo.
+                </p>
+                <p class="para">These zoos were actually exhibits that, by today’s standards, seem abhorrently cruel.
+                    However, the people who ran these zoos had no concept of conservation; they viewed the natural world as something that was inexhaustible.
+                    London was a prime example of a city that showcased an eclectic range of animals, much to the amazement of its visitors.
+                    A polar bear, elephant, monkeys, lions and baboons were all common sightings, not in a zoo, but in the Tower of London.
+                        The Royal Menagerie at the Tower began back in 1251 with King Henry VIII’s white bear – a gift from the King of Norway.
+                </p>
+                <p class="para">This tradition continued for around 600 years, with lions being one of the most symbolic animals of the Tower.
+                        In fact, King John was so proud of his lions that he named one of the buildings ‘Lion Tower’. Even now they are part of England’s identity and a national emblem.
+                        We are also extremely proud of our amazing lions here at Wilson Zoo. Of course, there was no real knowledge of how dangerous these animals could be,
+                        and it wasn’t until the early 1820s, after numerous attacks on visitors, that the Duke of Wellington demanded the Menagerie to be closed.
+                        The animals were transported to Regent’s Park as the first collection of London Zoo species,
+                            whilst others were shipped to America or joined travelling circuses. It was only after World War II that zoos began to take on their modern form,
+                            and those running them started to realise the importance of conservation. Facilities were set up, including research departments,
+                            and educational staff were hired to spread the message of conservation to the public.
+                            This new attitude towards zoo management has led to more appropriate environments for zoo animals,
+                                and extensive and on-going research means we can provide more and more suitable habitats and experiences in zoos.
+                </p>
+                <h2>Conservation</h2>
+                <hr>
+                <!-- Text from https://wildwelfare.org/the-conservation-mission-of-zoos-nabila-aziz/#:~:text=Zoos%20primarily%20deal%20with%20three,conservation%20programs%20in%20the%20wild. -->
+                <p class="para">Zoos primarily deal with three aspects of conservation – practice, advocacy and research.
+                     Conservation practice entails captive breeding, species reintroduction programs,
+                      Species survival plans and the use of zoo revenue for conservation programs in the wild.
+                       Conservation advocacy includes public engagement, promoting awareness, advocating stewardship,
+                        and fundraising events and schemes – a good example of which is the ‘Adopt an Animal’ scheme at most modern zoos.
+                         Moreover, conservation research is conducted on wildlife biology, population dynamics, animal behaviour,
+                          health and welfare and there are also publications generated by zoos on animal care and captivity.
+                </p>
+                <p class="para">Nearly fifty percent of world’s people live in cities disconnected from nature and in such cities,
+                     zoos and aquariums have a great potential to win huge support for wildlife preservation. In order to instil conservation sense in the general public,
+                      it is important to educate them about animals, their behaviour, habitat, population changes, and why they need to be conserved.
+                </p>
+                <h3>Visit our conservation friends</h3>
+                <!-- Image from https://www.mcsuk.org/ -->
+                <a class="conservationSite" href="https://www.mcsuk.org/">
+                <picture>
+                    <source media="(min-width:601px)" srcset="images/conservationImg.webp" type="image/webp">
+                    <source media="(max-width:600px)" srcset="images/conservationImg_small.webp 1x, images/conservationImg.webp 2x" type="image/webp">
+                    <img id="conservationImg" src="images/conservationImg.jpg" srcset="images/conservationImg_small.jpg 1x, images/conservationImg.jpg 2x" alt="Marine conservation society">
+                </picture>
+                </a>
+            </main>
+            <footer>
+                <p>
+                    &copy; Wilson Zoo Tel.No. 123-123-123
+                </p>
+                <a href="bookings.html">Book / Donate Page</a>
+                <p>
+                    David Bulis
+                </p>
+            </footer>
+        </div>
+        <script>
+            //check whether browser support service workers
+            if ('serviceWorker' in navigator) {
+                //wait until page loaded to avoid delaying rendering
+                window.addEventListener('load', function() {
+                    //register service worker
+                    navigator.serviceWorker.register('serviceworker.js').then(
+                        function(registration) {
+               console.log('Service worker registration successful',registration);
+                        }, 
+                        function(err) {
+                       console.log('Service worker registration failed', err);
+                    });
+                });
+            }
+        </script>
+    </body>
+</html>
